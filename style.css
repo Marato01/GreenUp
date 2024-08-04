@@ -19,7 +19,7 @@ body {
 }
 .overlay-text{
   position: absolute; /* Position relative to the container */
-  top: 60%; /* Center vertically */
+  top: 63%; /* Center vertically */
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Adjust for centering */
   color: white; /* Text color */
