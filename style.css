@@ -13,7 +13,7 @@ body {
   position: relative; 
   width: 100%;
   height: 400px;
-  background-image: url('./asset/pic1.jpg');
+  background-image: url('./pic1.jpg');
   background-size: cover;
   background-position: center;
 }
