@@ -1,13 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: black;
 }
-
-.body{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 
 header {
   width: 100%;
@@ -33,96 +28,52 @@ header img {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.responsive-list {
-  padding: 0;
+h2 {
+  font-size: 10px; /* Default size */
+  padding-left: 10px;
 }
 
-.responsive-list li {
-  font-size: clamp(1rem, 2vw, 2rem); /* Using clamp for responsive font size */
-  margin-bottom: 10px; /* Space between list items */
-}
-
-/* Additional media query example */
-@media (max-width: 768px) {
-  .responsive-list li {
-    font-size: 1.25rem; /* Adjust font size for smaller screens */
+@media (min-width: 600px) {
+  h2 {
+    font-size: 2rem; /* Larger size for larger screens */
   }
 }
 
-@media (max-width: 480px) {
-  .responsive-list li {
-    font-size: 1rem; /* Adjust font size for even smaller screens */
+@media (min-width: 900px) {
+  h2 {
+    font-size: 2.5rem; /* Even larger size for very large screens */
   }
 }
 
+.container{
+display: flex;
+max-width: 1200px;
+width: 100%;
+flex-wrap: wrap;
+justify-content: center;
+}
 
+img{
+  width: 180px;
+  height: 130px;
+  object-fit: cover;
+  object-position: bottom;
+  padding: 5px;
+}
 
-.flex-container {
+.container-certificate {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
+  padding: 10px; /* Optional padding */
+  box-sizing: border-box; /* Ensure padding is included in container's size */
 }
 
-.flex-item {
-  flex: 1 1 300px; /* Flexible basis with minimum width */
-  margin: 10px;
-  box-sizing: border-box;
-}
-
-.image img {
+.container-certificate  img {
   max-width: 100%;
   height: auto;
-  display: block;
+  object-fit: cover; /* Optional: Ensures the image covers its container while maintaining aspect ratio */
 }
-
-.text {
-  flex: 1 1 300px;
-}
-
-@media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 769px) {
-  .flex-container {
-    flex-direction: row;
-  }
-}
-
 
 .bottom-sheet {
   bottom: 0;
